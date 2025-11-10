@@ -1,0 +1,49 @@
+gnome_log_balance -> synth_sound	id=2470, loops=4
+bas	ready=human_walk_logbalance_ready (763), turn=human_walk_logbalance (762), walk=human_walk_logbalance (762), walkback=human_walk_logbalance (762), walkleft=human_walk_logbalance (762), walkright=human_walk_logbalance (762), run=-1
+
+gnome_balancing_rope -> synth_sound	id=2495, loops=5
+bas	ready=human_walk_logbalance_ready (763), turn=human_walk_logbalance (762), walk=human_walk_logbalance (762), walkback=human_walk_logbalance (762), walkleft=human_walk_logbalance (762), walkright=human_walk_logbalance (762), run=-1
+
+gnome_pipe -> squeeze_in after first exactmove,
+squeeze_in whern giving xp
+
+barbarian_pipe -> synth_sound	id=2489 (when giving xp)
+
+barbarian_rope_swing -> synth_sound	id=2494 (same time as xp)
+
+
+barbarian_log_balance -> synth_sound	id=2470, loops=4 (first move)
+synth_sound	id=2470, loops=2 (second move)
+
+fail: id=2493, loops=10 "...You lose your footing and fall into the water."
+id=2496 Something in the water bites you!
+
+
+barbarian_ledge -> 1t after starting synth_sound	id=2451, loops=2, delay=10
+2t after starting -> synth_sound	id=2451
+same time as message -> synth_sound	id=2451
+
+id=2493, loops=10 "You slip and fall onto the spikes below."
+
+
+barbarian walls -> synth_sound	id=2453, delay=40 (same time as exact move)
+falador wall same thing
+
+
+wilderness course gate fail -> id=2493, loops=10 (same time as anim +sound)
+
+yanille ridge -> synth_sound	id=2451, loops=4
+3t delay (going north is 4t)
+synth_sound	id=2451, loops=2
+3t delay
+synth_sound	id=2451, loops=2
+
+
+yanille pipe -> squeeze in between exactmoves and one at the end
+
+monkeybars -> synth_sound	id=2466, loops=4, delay=40 1t after setting bas
+synth_sound	id=2466, loops=3 -> 3t after that, this should be after the p_teleport in 2004-2006
+
+karamja stepping stones -> synth_sound	id=2461, delay=30, no fail sound
+karamja log fail -> synth_sound	id=2493, loops=10 
+actual walk no sound

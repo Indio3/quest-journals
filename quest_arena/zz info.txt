@@ -1,0 +1,7 @@
+
+==General info==
+Quest journal images retrieved by manpaint.
+Video ID are embedded in file names.
+
+==Yt-dlp command==
+yt-dlp --no-download --print "%(upload_date)s@@@%(title)s@@@%(duration)s@@@%(duration_string)s@@@%(webpage_url)s" "ytsearchdateall:runescape fight arena before:2022" > results.tsv
